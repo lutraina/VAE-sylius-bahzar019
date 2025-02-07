@@ -42,7 +42,6 @@ deploy_to_server:
     - echo "🔍 Contenu de la clé :"
     - cat /root/.ssh/id_ed25519
 
-
     # Définir la variable GIT_SSH_COMMAND avant d'exécuter git pull
     - export GIT_SSH_COMMAND="ssh -i /root/.ssh/id_ed25519"
 
@@ -54,4 +53,3 @@ deploy_to_server:
     - eval "$(ssh-agent -s)"
     - ssh-add ~/.ssh/id_ed25519
     - ssh -v -i ~/.ssh/id_ed25519 root@74.208.127.40 "echo 'Connexion réussie' && cd /var/www/bahzar019.com && git pull origin master"
-
