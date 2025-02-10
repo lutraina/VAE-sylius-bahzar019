@@ -6,23 +6,33 @@ use Sylius\Component\Core\Calculator\PriceCalculator;
 use Sylius\Component\Core\Model\Channel;
 use Sylius\Component\Core\Model\ChannelPricing;
 use Sylius\Component\Core\Model\Product;
+//use App\Entity\Product\ProductTranslation;
+use Sylius\Component\Core\Model\ProductTranslation;
 use Sylius\Component\Core\Model\ProductInterface;
 use Sylius\Component\Core\Model\ProductVariant;
 use Sylius\Component\Taxation\Model\TaxCategory;
+use Sylius\Component\Product\Model\ProductTranslationInterface;
 
 //use App\Entity\Product\Product;
 //use PHPUnit\Framework\TestCase;
 
+
 class ProductTest extends TestCase {
 
-    public function testItWorks(): void
-    {
-        self::assertEquals(42, 42);
-    }
 
-    public function testItWorks2(): void
+    public function testCreateTranslation(): void
     {
-        self::assertSame(42, 42);
+        $product = new class extends Product {
+            public function publicCreateTranslation(): ProductTranslationInterface
+            {
+                return $this->createTranslation();
+            }
+        };
+
+        $translation = $product->publicCreateTranslation();
+        var_dump(get_class($translation));
+        $this->assertInstanceOf(ProductTranslationInterface::class, $translation);
+        $this->assertInstanceOf(ProductTranslation::class, $translation);
     }
 
     public function testCanGetAndSetData3(): void
