@@ -51,7 +51,7 @@ deploy_to_server:
     # Connexion SSH pour exécuter des commandes sur le serveur distant
     - echo "$SSH_PRIVATE_KEY" > /root/.ssh/id_ed25519
     - eval "$(ssh-agent -s)"
-    - ssh-add ~/.ssh/id_ed25519
-    - ssh -v -i ~/.ssh/id_ed25519 root@74.208.127.40 "echo 'Connexion réussie' && cd /var/www/bahzar019.com/sylius-bahzar && git pull origin master"
+      #- ssh-add ~/.ssh/id_ed25519
+      #- ssh -v -i ~/.ssh/id_ed25519 root@74.208.127.40 "echo 'Connexion réussie' && cd /var/www/bahzar019.com/sylius-bahzar && git pull origin master"
 
 
