@@ -1,3 +1,7 @@
-{# templates/payment/cancel.html.twig #}
-<h1>Payment Canceled</h1>
-<p>Your payment was canceled. Please try again later.</p>
+{% extends '@SyliusShop/layout.html.twig' %}
+
+{% block content %}
+    <h1>Paiement annulé</h1>
+    <p>Votre paiement a été annulé. Vous pouvez réessayer.</p>
+    <a href="{{ path('sylius_shop_cart_summary') }}" class="ui button">Retour au panier</a>
+{% endblock %}
