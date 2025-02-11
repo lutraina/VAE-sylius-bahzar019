@@ -13,16 +13,18 @@ use Sylius\Component\Order\Model\OrderInterface;
 use Stripe\Stripe;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use App\Service\MelhorEnvioApiService;
 
 class StripeController extends AbstractController
 {
 
     private CartContextInterface $cartContext;
+    private MelhorEnvioApiService $melhorEnvioApiService;
 
-    public function __construct(CartContextInterface $cartContext, )
+    public function __construct(CartContextInterface $cartContext, MelhorEnvioApiService $melhorEnvioApiService)
     {
         $this->cartContext = $cartContext;
-
+        $this->melhorEnvioApiService = $melhorEnvioApiService;
     }
 
     /**
@@ -63,16 +65,14 @@ class StripeController extends AbstractController
      */
     public function checkout(): Response
     {
-        // Initialiser Stripe avec votre clé secrète
+        // Initialiser Stripe
         Stripe::setApiKey('sk_test_51QlBCyCIDRpMCJERCO6B28LMuCHoO251uTqb3sN3b7SjvPeFzHj0SV1f362GvlojC7ccRSjcvSzqAblbCOzlpILM002oJxK98T');
 
-        // Récupérer le panier de l'utilisateur
+        // Récupérer le panier
         /** @var OrderInterface $cart */
         $cart = $this->cartContext->getCart();
 
-
         if ($cart->isEmpty()) {
-             // dd($cart);die;
             return $this->redirectToRoute('sylius_shop_cart_summary');
         }
 
@@ -80,16 +80,66 @@ class StripeController extends AbstractController
 
         foreach ($cart->getItems() as $item) {
             $product = $item->getProduct();
+
             $lineItems[] = [
                 'price_data' => [
-                    'currency' => 'brl', // Remplacez par la devise de votre boutique
+                    'currency' => 'brl',
                     'product_data' => [
                         'name' => $product->getName(),
                     ],
-                    'unit_amount' => intval($item->getUnitPrice()), // Stripe attend un montant en cents
+                    'unit_amount' => intval($item->getUnitPrice()), // En cents
                 ],
                 'quantity' => $item->getQuantity(),
             ];
+        }
+
+        // Calcul des frais de livraison avec Melhor Envio
+        $shippingData = [
+            "from" => ["postal_code" => "13015-301"],
+            "to" => ["postal_code" => "13026-540"],
+            "products" => array_map(function ($item) {
+                return [
+                    "id" => "x",
+                    "width" => 11,
+                    "height" => 17,
+                    "length" => 11,
+                    "weight" => 0.3,
+                    "insurance_value" => 10.1,
+                    "quantity" => $item['quantity']
+                ];
+            }, $lineItems),
+            "options" => ["receipt" => false, "own_hand" => false],
+            "services" => "1,2,18"
+        ];
+
+        $shippingResponse = $this->melhorEnvioApiService->calculateShipment($shippingData);
+
+        // Vérifier si on a bien un prix pour SEDEX
+        $sedexPrice = null;
+        foreach ($shippingResponse as $option) {
+            if (isset($option['name']) && stripos($option['name'], 'SEDEX') !== false) {
+                $sedexPrice = floatval($option['price'] ?? 0);
+                break;
+            }
+        }
+
+        // Ajouter les frais de livraison si SEDEX est disponible
+        if ($sedexPrice !== null) {
+            $lineItems[] = [
+                'price_data' => [
+                    'currency' => 'brl',
+                    'product_data' => [
+                        'name' => 'Frais de livraison (SEDEX)',
+                    ],
+                    'unit_amount' => intval($sedexPrice * 100),
+                ],
+                'quantity' => 1,
+            ];
+        }
+
+        // Vérification avant Stripe
+        if (empty($lineItems)) {
+            return $this->redirectToRoute('sylius_shop_cart_summary');
         }
 
         // Créer la session Stripe
@@ -101,16 +151,7 @@ class StripeController extends AbstractController
             'cancel_url' => $this->generateUrl('stripe_cancel', [], \Symfony\Component\Routing\Generator\UrlGeneratorInterface::ABSOLUTE_URL),
         ]);
 
-
         return new RedirectResponse($session->url);
-
-        // Passer la variable header pour le template
-       /*$header = 'Votre panier';
-        return $this->render('cart/index.html.twig', [
-            'header' => $header, // Transmission de la variable header
-            'cart' => $cart,     // Transmission du panier
-            // Ajoutez d'autres variables nécessaires ici
-        ]);*/
     }
 
 

@@ -18,7 +18,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/.env" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/.env" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/.env.dev" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php">
     <include_path>
@@ -336,7 +337,7 @@
       <updated>1738929874479</updated>
       <workItem from="1738929875775" duration="634000" />
       <workItem from="1739049211758" duration="7134000" />
-      <workItem from="1739211839180" duration="21212000" />
+      <workItem from="1739211839180" duration="25325000" />
     </task>
     <servers />
   </component>
