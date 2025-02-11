@@ -65,12 +65,22 @@ class StripeController extends AbstractController
      */
     public function checkout(): Response
     {
+
         // Initialiser Stripe
         Stripe::setApiKey('sk_test_51QlBCyCIDRpMCJERCO6B28LMuCHoO251uTqb3sN3b7SjvPeFzHj0SV1f362GvlojC7ccRSjcvSzqAblbCOzlpILM002oJxK98T');
 
         // Récupérer le panier
         /** @var OrderInterface $cart */
         $cart = $this->cartContext->getCart();
+
+        foreach ($cart->getItems() as $item) {
+           // dump(get_class($item)); // Affiche la classe de l'objet
+          //  dump(get_class_methods($item)); // Liste toutes les méthodes de l'objet
+
+
+
+        }
+
 
         if ($cart->isEmpty()) {
             return $this->redirectToRoute('sylius_shop_cart_summary');
@@ -79,6 +89,7 @@ class StripeController extends AbstractController
         $lineItems = [];
 
         foreach ($cart->getItems() as $item) {
+
             $product = $item->getProduct();
 
             $lineItems[] = [
@@ -93,24 +104,36 @@ class StripeController extends AbstractController
             ];
         }
 
-        // Calcul des frais de livraison avec Melhor Envio
+        // Récupérer les informations d'expédition du client
+        $shippingAddress = $cart->getShippingAddress();
+        $destinationPostalCode = $shippingAddress ? $shippingAddress->getPostcode() : "13026-540"; // Valeur par défaut
+
+        $originPostalCode = "13015-301"; // Adresse d'expédition
+
+        // Construire la liste des produits avec les vraies valeurs
+        $products = array_map(function ($item) {
+            $variant = $item->getProduct()->getVariants()[0]; // Récupération de la première variante du produit
+
+            return [
+                "id" => (string) $variant->getId(),
+                "width" => $variant->getWidth(),
+                "height" => $variant->getHeight(),
+                "length" => $variant->getDepth(), // Attention, "length" peut être "depth" en BDD
+                "weight" => $variant->getWeight(),
+                "insurance_value" => 10.1, // Modifier selon tes besoins
+                "quantity" => $item->getQuantity(),
+            ];
+        }, $cart->getItems()->toArray()); // Conversion du panier en tableau
+
+        // Construire les données d'expédition
         $shippingData = [
-            "from" => ["postal_code" => "13015-301"],
-            "to" => ["postal_code" => "13026-540"],
-            "products" => array_map(function ($item) {
-                return [
-                    "id" => "x",
-                    "width" => 11,
-                    "height" => 17,
-                    "length" => 11,
-                    "weight" => 0.3,
-                    "insurance_value" => 10.1,
-                    "quantity" => $item['quantity']
-                ];
-            }, $lineItems),
+            "from" => ["postal_code" => $originPostalCode],
+            "to" => ["postal_code" => $destinationPostalCode],
+            "products" => $products,
             "options" => ["receipt" => false, "own_hand" => false],
             "services" => "1,2,18"
         ];
+
 
         $shippingResponse = $this->melhorEnvioApiService->calculateShipment($shippingData);
 
