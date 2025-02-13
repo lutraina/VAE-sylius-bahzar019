@@ -5,11 +5,67 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6781c35-3148-4c1d-b444-7d0da463c55e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/config/packages/test/framework.yam" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/features/product.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Behat/Context/Ui/Admin/ProductContext.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.phpunit.result.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.phpunit.result.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/behat.yml.dist" beforeDir="false" afterPath="$PROJECT_DIR$/behat.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/test/framework.yam" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services_test.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services_test.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/product.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/product.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/06/37/b3863abdfbf4a5d39aec16c5fee5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/0d/46/3cbdd75099fd6920a382b846354e.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/10/26/3ee53b7dc1ea8dd4cc44333179a4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/10/9f/d79dc29436a3c8fa4ea1f7d4700f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/13/6f/9a3f977bc3318591755d9d27097c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/16/a1/bceca23b26012846c49cfbcd7a13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/19/58/d3511e4a2aea8cf9cbd8267a79a5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/19/e5/5fb48698b087777ac08430363de2/lamborghini.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/1a/61/42ef65e96f66033ac22a280976f4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/1e/1e/7a72c52609b1bf40c3440b2eb783.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/1f/5d/bfd9e598eefae2c537dab8fb5263.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/20/d8/5ce1d1a33c601777262580ddb5ec.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/2a/99/fe49460be2fc66560438efd4a23d/lamborghini.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/2c/99/074113e45d4d094841ac880b097f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/35/d4/edf6e46abda1a4911619abc3f3b6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/44/40/120b33555560c2b57b419750edbe.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/44/91/da8230ff63fb2e549d4b97bf2db5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/48/9c/01d0615bb50b1214c87625983857.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/4b/07/9209bec062ea42df1e117dc2bf4d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/56/67/029a92074ca838cd6d084a26e681.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/57/12/38d1d05f77f90894fee52782dcc4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/59/8d/ee35cee63a5cee83398143bdfeb3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/5c/f8/8eaccf2e46197e38c7dc00823194.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/5f/05/251e8db484dc7891a90bd74c25c5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/73/28/22a062dd7c83684ba00819cc3333.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/78/c5/5a1c348315b43bda1d50244690f4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/7f/92/d344f4cc3432f5b0c2ee7eec0375.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/88/4c/5932fb166b6f047e2e948d665511.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/90/2c/05eacac8c615c3c2b46f39184981.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/94/ca/e344e4ac70361c5ea444c0375b11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/9c/9c/0c43f7ae4671d9a20645b5a75c9b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/a3/f7/ace32cf474fa334fbeee522da788.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/a8/11/c129104ea26c79a6f05ddf67b0d9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/aa/4c/bc5fcfcf18177a9d2a2ed835c193.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/ac/65/c0ea0d1e1a8e7ec19729ba5d52ff.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/b5/dd/f2d85cf08a2895245f162c516394.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/b8/f6/41140a9609bc8627a2a790c6ca7d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/b9/de/fe19ea985ff7e346667afeb5409b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/ba/20/d48d9dd08e8cc5a3acdb5d0ddc26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/c2/0c/5701f136097e58a974dc52a82dd9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/c4/b1/0c422cd4f650a5317e32b8611960.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/ce/d6/983f36b2114ea77df86165fe3dd6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/ce/e3/51962892f2602d64070c1a7b7690.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/dc/f3/b906f5fe014a33b9a4c8db0a17ec.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/ef/3b/27477860ac84b00d398ed593f235.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/f3/87/1d633302047303875314742b5b50.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/fe/23/a8c151b180c2aac7069c9ba88453.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/image/ff/36/41a35759dec3922c76d6134054e8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Behat/Context/Ui/Admin/ProductContext.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Behat/Context/Ui/Admin/ProductContext.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +83,10 @@
     <setting file="file://$PROJECT_DIR$/.env" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/.env.dev" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/config/services.yaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/features/product.feature" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/tests/Behat/Context/Ui/Admin/ProductContext2.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/tests/Unit/Controller/StripeControllerTest.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/var/cache/test/ContainerBEP1CJG/getSylius_Behat_Context_Api_Shop_ProductService.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php">
     <include_path>
@@ -71,7 +131,6 @@
       <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
       <path value="$PROJECT_DIR$/vendor/symfony/http-client-contracts" />
       <path value="$PROJECT_DIR$/vendor/phpspec/phpspec" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php81" />
       <path value="$PROJECT_DIR$/vendor/symfony/templating" />
       <path value="$PROJECT_DIR$/vendor/symfony/browser-kit" />
       <path value="$PROJECT_DIR$/vendor/symfony/monolog-bundle" />
@@ -191,7 +250,6 @@
       <path value="$PROJECT_DIR$/vendor/phrity/net-stream" />
       <path value="$PROJECT_DIR$/vendor/phrity/net-uri" />
       <path value="$PROJECT_DIR$/vendor/sonata-project/form-extensions" />
-      <path value="$PROJECT_DIR$/vendor/sonata-project/block-bundle" />
       <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
       <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
       <path value="$PROJECT_DIR$/vendor/ramsey/collection" />
@@ -283,6 +341,9 @@
       <path value="$PROJECT_DIR$/vendor/gedmo/doctrine-extensions" />
       <path value="$PROJECT_DIR$/vendor/rector/rector" />
       <path value="$PROJECT_DIR$/vendor/openlss/lib-array2xml" />
+      <path value="$PROJECT_DIR$/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/vendor/sonata-project/block-bundle" />
+      <path value="$PROJECT_DIR$/vendor/setono/sylius-behat-pack" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
@@ -293,21 +354,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "dev-phpUnit2",
-    "last_opened_file_path": "/home/lucianahembert/sites/sylius-bahzar-docker/sylius-bahzar/src/Controller",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.webide.settings.project.settings.php",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev-phpUnit2&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/lucianahembert/sites/sylius-bahzar-docker/sylius-bahzar/src/Controller&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.webide.settings.project.settings.php&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/Controller" />
@@ -326,7 +387,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Main" type="PhpBehatConfigurationType">
-      <BehatRunner configuration_file="$PROJECT_DIR$/behat.yml.dist" scope="Yml" use_alternative_configuration_file="true" />
+      <BehatRunner configuration_file="$PROJECT_DIR$/behat.yml" scope="Yml" use_alternative_configuration_file="true" />
       <method v="2" />
     </configuration>
     <configuration name="Main" type="PhpBehatConfigurationType">
