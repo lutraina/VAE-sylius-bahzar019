@@ -26,7 +26,7 @@
 /.env.dev
 /.env.int
 /.env.prod
-/.env.local.php
+#/.env.local.php
 #/public/bundles
 /var/
 /vendor/
