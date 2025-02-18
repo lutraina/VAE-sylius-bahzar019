@@ -1,0 +1,170 @@
+Current page: 200 http://localhost:8080/admin/login
+Response headers:
+Array
+(
+    [cache-control] => Array
+        (
+            [0] => max-age=0, must-revalidate, no-cache, no-store, private
+        )
+
+    [date] => Array
+        (
+            [0] => Thu, 13 Feb 2025 18:32:19 GMT
+        )
+
+    [content-type] => Array
+        (
+            [0] => text/html; charset=UTF-8
+        )
+
+    [link] => Array
+        (
+            [0] => <http://localhost:8080/api/v2/docs.jsonld>; rel="http://www.w3.org/ns/hydra/core#apiDocumentation"
+        )
+
+    [x-frame-options] => Array
+        (
+            [0] => sameorigin
+        )
+
+    [x-robots-tag] => Array
+        (
+            [0] => noindex
+        )
+
+    [expires] => Array
+        (
+            [0] => Thu, 13 Feb 2025 18:32:19 GMT
+        )
+
+)
+
+Response content:
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Sylius | Administration panel login</title>
+
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+        
+        <!-- BEGIN EVENT | event name: "sylius.admin.layout.stylesheets" -->
+<!-- BEGIN BLOCK | event name: "sylius.admin.layout.stylesheets", block name: "styles", template: "@SyliusAdmin/_styles.html.twig", priority: 10 -->
+<link rel="stylesheet" href="/build/admin/admin-entry.css">
+
+
+<!-- END BLOCK | event name: "sylius.admin.layout.stylesheets", block name: "styles" -->
+<!-- BEGIN BLOCK | event name: "sylius.admin.layout.stylesheets", block name: "legacy", template: "@SyliusUi/Block/_legacySonataEvent.html.twig", priority: 0 -->
+
+
+<!-- END BLOCK | event name: "sylius.admin.layout.stylesheets", block name: "legacy" -->
+<!-- END EVENT | event name: "sylius.admin.layout.stylesheets" -->
+</head>
+<body class="centered">
+
+    <!-- BEGIN EVENT | event name: "sylius.admin.login.content" -->
+<!-- BEGIN BLOCK | event name: "sylius.admin.login.content", block name: "before_legacy", template: "@SyliusUi/Block/_legacySonataEvent.html.twig", priority: 15 -->
+
+
+<!-- END BLOCK | event name: "sylius.admin.login.content", block name: "before_legacy" -->
+<!-- BEGIN BLOCK | event name: "sylius.admin.login.content", block name: "tree", template: "@SyliusAdmin/Security/_content.html.twig", priority: 10 -->
+    
+<div class="ui middle aligned center aligned grid">
+    <div class="column">
+        <!-- BEGIN EVENT | event name: "sylius.admin.login.before_form" -->
+<!-- BEGIN BLOCK | event name: "sylius.admin.login.before_form", block name: "legacy", template: "@SyliusUi/Block/_legacySonataEvent.html.twig", priority: 30 -->
+
+
+<!-- END BLOCK | event name: "sylius.admin.login.before_form", block name: "legacy" -->
+<!-- BEGIN BLOCK | event name: "sylius.admin.login.before_form", block name: "logo", template: "@SyliusUi/Security/_logo.html.twig", priority: 20 -->
+    <div style="max-width: 270px; margin: 0 auto; margin-bottom: 40px;">
+        <img src="/build/admin/images/logo.72a9465e.png" class="ui fluid image" id="logo">
+    </div>
+
+<!-- END BLOCK | event name: "sylius.admin.login.before_form", block name: "logo" -->
+<!-- BEGIN BLOCK | event name: "sylius.admin.login.before_form", block name: "error", template: "@SyliusUi/Security/_error.html.twig", priority: 10 -->
+
+    <div class="ui left aligned basic segment">
+                    <div class="ui icon negative message" data-test-flash-message="negative">
+        <i class="remove icon"></i>
+        <div class="content">
+                        <div class="header">
+                Error
+            </div>
+                        <p>Invalid credentials.</p>
+        </div>
+    </div>
+
+
+    </div>
+
+<!-- END BLOCK | event name: "sylius.admin.login.before_form", block name: "error" -->
+<!-- BEGIN BLOCK | event name: "sylius.admin.login.before_form", block name: "flashes", template: "@SyliusUi/_flashes.html.twig", priority: 0 -->
+                                                    
+<!-- END BLOCK | event name: "sylius.admin.login.before_form", block name: "flashes" -->
+<!-- END EVENT | event name: "sylius.admin.login.before_form" -->
+
+        <form method="post" action="/admin/login-check" class="ui large loadable form" novalidate="novalidate">
+            <div class="ui left aligned very padded segment">
+                <!-- BEGIN EVENT | event name: "sylius.admin.login.form.content" -->
+<!-- BEGIN BLOCK | event name: "sylius.admin.login.form.content", block name: "credentials", template: "@SyliusUi/Security/Form/_credentials.html.twig", priority: 20 -->
+                        <div  class=" field required"><label for="_username" class="required">Username</label><input type="text" id="_username" name="_username" required="required" value="lutraina" /></div>
+                        <div  class=" field required"><label for="_password" class="required">Password</label><input type="password" id="_password" name="_password" required="required" /></div>
+<div class="field">
+        <div class="ui toggle checkbox"><input type="checkbox" id="_remember_me" name="_remember_me" value="1" /><label for="_remember_me">Remember me</label></div>
+    </div>
+<input type="hidden" name="_csrf_admin_security_token" value="106ec19e0436f93cfc808febe5.WVt9Z2sDzt30T7-DtuX6GxYmfKpfIPucWRTkFd2Fud0.ODQsADtvvZ-2O9bq75egSidnS5swcZ-qIGSOXJbczoo1bhctLjCJ7bAd_g">
+
+<!-- END BLOCK | event name: "sylius.admin.login.form.content", block name: "credentials" -->
+<!-- BEGIN BLOCK | event name: "sylius.admin.login.form.content", block name: "submit", template: "@SyliusUi/Security/Form/_submit.html.twig", priority: 10 -->
+<button type="submit" class="ui fluid large primary submit button">Login</button>
+
+<!-- END BLOCK | event name: "sylius.admin.login.form.content", block name: "submit" -->
+<!-- BEGIN BLOCK | event name: "sylius.admin.login.form.content", block name: "divider", template: "@SyliusAdmin/_divider.html.twig", priority: 0 -->
+<div class="ui divider"></div>
+
+<!-- END BLOCK | event name: "sylius.admin.login.form.content", block name: "divider" -->
+<!-- BEGIN BLOCK | event name: "sylius.admin.login.form.content", block name: "request_password_reset", template: "@SyliusAdmin/Security/Form/_requestPasswordResetButton.html.twig", priority: 0 -->
+<a href="/admin/forgotten-password" class="ui fluid button">
+    Forgot password?
+</a>
+
+<!-- END BLOCK | event name: "sylius.admin.login.form.content", block name: "request_password_reset" -->
+<!-- END EVENT | event name: "sylius.admin.login.form.content" -->
+            </div>
+
+            <!-- BEGIN EVENT | event name: "sylius.admin.login.form" -->
+<!-- BEGIN BLOCK | event name: "sylius.admin.login.form", block name: "legacy", template: "@SyliusUi/Block/_legacySonataEvent.html.twig", priority: 0 -->
+
+
+<!-- END BLOCK | event name: "sylius.admin.login.form", block name: "legacy" -->
+<!-- END EVENT | event name: "sylius.admin.login.form" -->
+        </form>
+    </div>
+</div>
+
+<!-- END BLOCK | event name: "sylius.admin.login.content", block name: "tree" -->
+<!-- BEGIN BLOCK | event name: "sylius.admin.login.content", block name: "after_legacy", template: "@SyliusUi/Block/_legacySonataEvent.html.twig", priority: 5 -->
+
+
+<!-- END BLOCK | event name: "sylius.admin.login.content", block name: "after_legacy" -->
+<!-- END EVENT | event name: "sylius.admin.login.content" -->
+
+
+    <!-- BEGIN EVENT | event name: "sylius.admin.layout.javascripts" -->
+<!-- BEGIN BLOCK | event name: "sylius.admin.layout.javascripts", block name: "scripts", template: "@SyliusAdmin/_scripts.html.twig", priority: 10 -->
+<script src="/build/admin/admin-entry.js"></script>
+<script src="/build/app/admin/app-admin-entry.js"></script>
+
+<!-- END BLOCK | event name: "sylius.admin.layout.javascripts", block name: "scripts" -->
+<!-- BEGIN BLOCK | event name: "sylius.admin.layout.javascripts", block name: "legacy", template: "@SyliusUi/Block/_legacySonataEvent.html.twig", priority: 0 -->
+
+
+<!-- END BLOCK | event name: "sylius.admin.layout.javascripts", block name: "legacy" -->
+<!-- END EVENT | event name: "sylius.admin.layout.javascripts" -->
+</body>
+</html>

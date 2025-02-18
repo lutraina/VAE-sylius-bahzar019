@@ -46,12 +46,12 @@ deploy_to_server:
     - export GIT_SSH_COMMAND="ssh -i /root/.ssh/id_ed25519"
 
     # Exécuter git pull en utilisant la clé privée via GIT_SSH_COMMAND
-    - git pull origin master
+    - git pull origin integration
 
     # Connexion SSH pour exécuter des commandes sur le serveur distant
     - echo "$SSH_PRIVATE_KEY" > /root/.ssh/id_ed25519
     - eval "$(ssh-agent -s)"
     - ssh-add ~/.ssh/id_ed25519
-    - ssh -v -i ~/.ssh/id_ed25519 root@74.208.127.40 "echo 'Connexion réussie' && cd /var/www/bahzar019.com/sylius-bahzar && git pull origin master"
+    - ssh -v -i ~/.ssh/id_ed25519 root@74.208.127.40 "echo 'Connexion réussie' && cd /var/www/int.bahzar019.com/sylius-bahzar && git pull origin integration"
 
 

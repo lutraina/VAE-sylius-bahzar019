@@ -1,0 +1,985 @@
+Current page: 200 http://localhost:8080/admin/
+Response headers:
+Array
+(
+    [cache-control] => Array
+        (
+            [0] => max-age=0, must-revalidate, no-cache, no-store, private
+        )
+
+    [date] => Array
+        (
+            [0] => Thu, 13 Feb 2025 16:28:07 GMT
+        )
+
+    [content-type] => Array
+        (
+            [0] => text/html; charset=UTF-8
+        )
+
+    [link] => Array
+        (
+            [0] => <http://localhost:8080/api/v2/docs.jsonld>; rel="http://www.w3.org/ns/hydra/core#apiDocumentation"
+        )
+
+    [x-frame-options] => Array
+        (
+            [0] => sameorigin
+        )
+
+    [x-robots-tag] => Array
+        (
+            [0] => noindex
+        )
+
+    [expires] => Array
+        (
+            [0] => Thu, 13 Feb 2025 16:28:07 GMT
+        )
+
+)
+
+Response content:
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Painel  | Sylius</title>
+
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+        
+        <!-- BEGIN EVENT | event name: "sylius.admin.layout.stylesheets" -->
+<!-- BEGIN BLOCK | event name: "sylius.admin.layout.stylesheets", block name: "styles", template: "@SyliusAdmin/_styles.html.twig", priority: 10 -->
+<link rel="stylesheet" href="/build/admin/admin-entry.css">
+
+
+<!-- END BLOCK | event name: "sylius.admin.layout.stylesheets", block name: "styles" -->
+<!-- BEGIN BLOCK | event name: "sylius.admin.layout.stylesheets", block name: "legacy", template: "@SyliusUi/Block/_legacySonataEvent.html.twig", priority: 0 -->
+
+
+<!-- END BLOCK | event name: "sylius.admin.layout.stylesheets", block name: "legacy" -->
+<!-- END EVENT | event name: "sylius.admin.layout.stylesheets" -->
+</head>
+
+<body>
+    <div class="admin-layout">
+        <script>
+            const layoutBreakpoint = 768;
+            const layoutContainer = document.querySelector('.admin-layout');
+
+            let layoutState = sessionStorage.getItem('sylius:layout');
+
+            const setLayoutState = () => {
+                layoutContainer.classList.toggle('admin-layout--open', layoutState);
+                sessionStorage.setItem('sylius:layout', layoutState);
+            };
+
+            if (layoutState === null) {
+                layoutState = window.innerWidth > layoutBreakpoint;
+            } else {
+                layoutState = window.innerWidth > layoutBreakpoint ? layoutState === 'true' : false;
+            }
+
+            setLayoutState();
+        </script>
+
+        <div class="admin-layout__sidebar">
+            <div class="admin-layout__nav">
+                    <!-- BEGIN EVENT | event name: "sylius.admin.layout.sidebar" -->
+<!-- BEGIN BLOCK | event name: "sylius.admin.layout.sidebar", block name: "top_legacy", template: "@SyliusUi/Block/_legacySonataEvent.html.twig", priority: 25 -->
+
+
+<!-- END BLOCK | event name: "sylius.admin.layout.sidebar", block name: "top_legacy" -->
+<!-- BEGIN BLOCK | event name: "sylius.admin.layout.sidebar", block name: "logo", template: "@SyliusAdmin/_logo.html.twig", priority: 20 -->
+
+<a class="item" href="/admin/" style="padding: 13px 0;">
+    <div style="max-width: 90px; margin: 0 auto;">
+                    <img src="/build/admin/images/admin-logo.36187e06.svg" class="ui fluid image">
+            </div>
+</a>
+
+<!-- END BLOCK | event name: "sylius.admin.layout.sidebar", block name: "logo" -->
+<!-- BEGIN BLOCK | event name: "sylius.admin.layout.sidebar", block name: "menu", template: "@SyliusAdmin/_menu.html.twig", priority: 10 -->
+
+<div class="item">
+    <div class="ui icon inverted transparent input">
+        <input class="sylius-admin-menu-search-input" type="text" placeholder="Pesquisar">
+        <i class="search icon"></i>
+    </div>
+</div>
+
+<div class="sylius-admin-menu">
+        
+    <div class="item first">
+    <div class="header">Catálogo</div>
+    <div class="menu">
+            
+<a class="item first" href="/admin/taxons/new" >
+    <i class="icon folder"></i> 
+    Categorias
+</a>
+
+    
+<a class="item " href="/admin/products/" >
+    <i class="icon cube"></i> 
+    Produtos
+</a>
+
+    
+<a class="item " href="/admin/inventory/" >
+    <i class="icon history"></i> 
+    Estoque
+</a>
+
+    
+<a class="item " href="/admin/product-attributes/" >
+    <i class="icon cubes"></i> 
+    Atributos
+</a>
+
+    
+<a class="item " href="/admin/product-options/" >
+    <i class="icon options"></i> 
+    Opções
+</a>
+
+    
+<a class="item last" href="/admin/product-association-types/" >
+    <i class="icon tasks"></i> 
+    Tipos de associação
+</a>
+
+
+    </div>
+</div>
+
+    
+    <div class="item ">
+    <div class="header">Vendas</div>
+    <div class="menu">
+            
+<a class="item first" href="/admin/orders/" >
+    <i class="icon cart"></i> 
+    Pedidos
+</a>
+
+    
+<a class="item " href="/admin/payments/" >
+    <i class="icon payment"></i> 
+    Pagamentos
+</a>
+
+    
+<a class="item last" href="/admin/shipments/" >
+    <i class="icon truck"></i> 
+    Envios
+</a>
+
+
+    </div>
+</div>
+
+    
+    <div class="item ">
+    <div class="header">Cliente</div>
+    <div class="menu">
+            
+<a class="item first" href="/admin/customers/" >
+    <i class="icon users"></i> 
+    Clientes
+</a>
+
+    
+<a class="item last" href="/admin/customer-groups/" >
+    <i class="icon archive"></i> 
+    Grupos
+</a>
+
+
+    </div>
+</div>
+
+    
+    <div class="item ">
+    <div class="header">Marketing</div>
+    <div class="menu">
+            
+<a class="item first" href="/admin/promotions/" >
+    <i class="icon in cart"></i> 
+    Cart promotions
+</a>
+
+    
+<a class="item " href="/admin/catalog-promotions/" >
+    <i class="icon bookmark"></i> 
+    Catalog promotions
+</a>
+
+    
+<a class="item last" href="/admin/product-reviews/" >
+    <i class="icon newspaper"></i> 
+    Comentários de produtos
+</a>
+
+
+    </div>
+</div>
+
+    
+    <div class="item ">
+    <div class="header">Configuração</div>
+    <div class="menu">
+            
+<a class="item first" href="/admin/channels/" >
+    <i class="icon random"></i> 
+    Canais
+</a>
+
+    
+<a class="item " href="/admin/countries/" >
+    <i class="icon flag"></i> 
+    Países
+</a>
+
+    
+<a class="item " href="/admin/zones/" >
+    <i class="icon world"></i> 
+    Regiões
+</a>
+
+    
+<a class="item " href="/admin/currencies/" >
+    <i class="icon dollar"></i> 
+    Moedas
+</a>
+
+    
+<a class="item " href="/admin/exchange-rates/" >
+    <i class="icon sliders"></i> 
+    Taxa de câmbio
+</a>
+
+    
+<a class="item " href="/admin/locales/" >
+    <i class="icon translate"></i> 
+    Localidades
+</a>
+
+    
+<a class="item " href="/admin/payment-methods/" >
+    <i class="icon payment"></i> 
+    Meios de pagamentos
+</a>
+
+    
+<a class="item " href="/admin/shipping-methods/" >
+    <i class="icon shipping"></i> 
+    Métodos de envio
+</a>
+
+    
+<a class="item " href="/admin/shipping-categories/" >
+    <i class="icon list layout"></i> 
+    Categorias de envio
+</a>
+
+    
+<a class="item " href="/admin/tax-categories/" >
+    <i class="icon tags"></i> 
+    Categorias de impostos
+</a>
+
+    
+<a class="item " href="/admin/tax-rates/" >
+    <i class="icon money"></i> 
+    Impostos
+</a>
+
+    
+<a class="item last" href="/admin/users/" >
+    <i class="icon lock"></i> 
+    Administradores
+</a>
+
+
+    </div>
+</div>
+
+    
+    <div class="item last">
+    <div class="header">Suporte oficial</div>
+    <div class="menu">
+            
+<a class="item first" href="https://sylius.com/plus/" target="_blank">
+    <i class="icon plus"></i> 
+    Sylius Plus
+</a>
+
+    
+<a class="item " href="https://store.sylius.com/" target="_blank">
+    <i class="icon plug"></i> 
+    Navegar em plugins
+</a>
+
+    
+<a class="item " href="https://sylius.com/services/" target="_blank">
+    <i class="icon cog"></i> 
+    Serviços profissionais
+</a>
+
+    
+<a class="item " href="https://sylius.com/find-a-partner/" target="_blank">
+    <i class="icon handshake"></i> 
+    Encontre um parceiro
+</a>
+
+    
+<a class="item last" href="https://sylius.com/certification/" target="_blank">
+    <i class="icon certificate"></i> 
+    Sylius certification
+</a>
+
+
+    </div>
+</div>
+
+
+</div>
+
+<!-- END BLOCK | event name: "sylius.admin.layout.sidebar", block name: "menu" -->
+<!-- BEGIN BLOCK | event name: "sylius.admin.layout.sidebar", block name: "down_legacy", template: "@SyliusUi/Block/_legacySonataEvent.html.twig", priority: 5 -->
+
+
+<!-- END BLOCK | event name: "sylius.admin.layout.sidebar", block name: "down_legacy" -->
+<!-- END EVENT | event name: "sylius.admin.layout.sidebar" -->
+                <div class="admin-layout__toggle" data-layout-toggle>
+                    <i class="close icon"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="admin-layout__body">
+            <div class="admin-layout__topbar">
+                <div class="ui borderless menu">
+                        <!-- BEGIN EVENT | event name: "sylius.admin.layout.topbar_left" -->
+<!-- BEGIN BLOCK | event name: "sylius.admin.layout.topbar_left", block name: "sidebar_toggle", template: "@SyliusAdmin/Layout/_sidebarToggle.html.twig", priority: 30 -->
+<a class="icon item" id="sidebar-toggle" title="Alternar barra lateral" data-layout-toggle>
+    <i class="sidebar icon"></i>
+</a>
+
+<!-- END BLOCK | event name: "sylius.admin.layout.topbar_left", block name: "sidebar_toggle" -->
+<!-- BEGIN BLOCK | event name: "sylius.admin.layout.topbar_left", block name: "legacy", template: "@SyliusUi/Block/_legacySonataEvent.html.twig", priority: 25 -->
+
+
+<!-- END BLOCK | event name: "sylius.admin.layout.topbar_left", block name: "legacy" -->
+<!-- BEGIN BLOCK | event name: "sylius.admin.layout.topbar_left", block name: "channel_links", template: "@SyliusAdmin/Layout/_channelLinksWidget.html.twig", priority: 20 -->
+
+
+    
+    <a href="http://localhost/pt_BR/" target="_blank" class="item">Ver sua loja</a>
+
+
+<!-- END BLOCK | event name: "sylius.admin.layout.topbar_left", block name: "channel_links" -->
+<!-- BEGIN BLOCK | event name: "sylius.admin.layout.topbar_left", block name: "search", template: "@SyliusAdmin/_search.html.twig", priority: 10 -->
+
+<div class="item">
+    <form method="get" action="/admin/products/">
+        <div class="ui transparent left icon input">
+            <input type="text" name="criteria[search][value]" placeholder="Procurar produtos...">
+            <i class="search link icon"></i>
+        </div>
+    </form>
+</div>
+
+<!-- END BLOCK | event name: "sylius.admin.layout.topbar_left", block name: "search" -->
+<!-- END EVENT | event name: "sylius.admin.layout.topbar_left" -->
+
+    <div class="ui left floated dividing empty item"></div>
+
+    <!-- BEGIN EVENT | event name: "sylius.admin.layout.topbar_middle" -->
+<!-- BEGIN BLOCK | event name: "sylius.admin.layout.topbar_middle", block name: "legacy", template: "@SyliusUi/Block/_legacySonataEvent.html.twig", priority: 0 -->
+
+
+<!-- END BLOCK | event name: "sylius.admin.layout.topbar_middle", block name: "legacy" -->
+<!-- END EVENT | event name: "sylius.admin.layout.topbar_middle" -->
+
+    <div class="ui right floated dividing empty item"></div>
+
+    <!-- BEGIN EVENT | event name: "sylius.admin.layout.topbar_right" -->
+<!-- BEGIN BLOCK | event name: "sylius.admin.layout.topbar_right", block name: "notifications", template: "@SyliusAdmin/Layout/_notificationWidget.html.twig", priority: 30 -->
+
+<div class="ui floated simple dropdown icon item" id="sylius-version-notification" data-frequency="60" data-url="/admin/ajax/get-version" data-current-version="1.13.10">
+    <i class="outline bell icon"></i>
+    <div class="menu">
+        <div class="ui message" id="no-notifications">
+            <span>Nenhuma nova notificação</span>
+        </div>
+        <div class="ui message" id="notifications">
+            <span>
+                Há uma nova versão do Sylius disponível
+                <i class="remove link icon" data-dismiss style="margin-left: 1em; margin-right: -0.5em;"></i>
+            </span>
+            <br/>
+            <span>Entre em contato com o administrador para atualizar</span>
+        </div>
+    </div>
+</div>
+
+
+<!-- END BLOCK | event name: "sylius.admin.layout.topbar_right", block name: "notifications" -->
+<!-- BEGIN BLOCK | event name: "sylius.admin.layout.topbar_right", block name: "support", template: "@SyliusAdmin/_support.html.twig", priority: 20 -->
+
+<div class="ui floated simple dropdown item">
+    <i class="life ring icon"></i>
+    <span>Obter suporte</span>
+    <div class="menu">
+        <a href="https://docs.sylius.com" class="item" target="_blank">
+            <i class="book icon"></i>
+            Documentação
+        </a>
+        <a href="https://sylius.com/slack" class="item" target="_blank">
+            <i class="slack icon"></i>
+            Join Slack
+        </a>
+        <a href="https://github.com/Sylius/Sylius/issues" class="item" target="_blank">
+            <i class="github icon"></i>
+            Issue tracker
+        </a>
+        <a href="https://www.youtube.com/channel/UCtZI2yUM2bZwbVlGpQJ9VCQ" class="item" target="_blank">
+            <i class="youtube icon"></i>
+            YouTube
+        </a>
+    </div>
+</div>
+
+<!-- END BLOCK | event name: "sylius.admin.layout.topbar_right", block name: "support" -->
+<!-- BEGIN BLOCK | event name: "sylius.admin.layout.topbar_right", block name: "security", template: "@SyliusAdmin/_security.html.twig", priority: 10 -->
+
+<div class="ui floated simple dropdown item">
+        <i class="ui avatar icon user"></i>
+    <span>Luciana</span>
+    <i class="dropdown icon"></i>
+    <div class="menu">
+        <a href="/admin/users/622/edit" class="item">
+            <i class="user icon"></i>
+            Minha conta
+        </a>
+        <a href="/admin/logout" id="sylius-logout-button" class="item">
+            <i class="sign out icon"></i>
+            Sair
+        </a>
+    </div>
+</div>
+
+<!-- END BLOCK | event name: "sylius.admin.layout.topbar_right", block name: "security" -->
+<!-- BEGIN BLOCK | event name: "sylius.admin.layout.topbar_right", block name: "legacy", template: "@SyliusUi/Block/_legacySonataEvent.html.twig", priority: 5 -->
+
+
+<!-- END BLOCK | event name: "sylius.admin.layout.topbar_right", block name: "legacy" -->
+<!-- END EVENT | event name: "sylius.admin.layout.topbar_right" -->
+                </div>
+            </div>
+
+            <div class="admin-layout__content">
+                    
+                                                    
+                                
+                    <!-- BEGIN EVENT | event name: "sylius.admin.dashboard.content" -->
+<!-- BEGIN BLOCK | event name: "sylius.admin.dashboard.content", block name: "before_header_legacy", template: "@SyliusUi/Block/_legacySonataEvent.html.twig", priority: 45 -->
+
+
+<!-- END BLOCK | event name: "sylius.admin.dashboard.content", block name: "before_header_legacy" -->
+<!-- BEGIN BLOCK | event name: "sylius.admin.dashboard.content", block name: "header", template: "@SyliusAdmin/Dashboard/_header.html.twig", priority: 40 -->
+
+<div class="ui stackable grid">
+    <div class="twelve wide column">
+        <h1 class="ui header">
+        <i class="circular home icon"></i>
+        <div class="content">
+        Painel
+                <div class="sub header">Visão geral de sua loja</div>
+            </div>
+</h1>
+
+        <!-- BEGIN EVENT | event name: "sylius.admin.dashboard.header.content" -->
+<!-- BEGIN BLOCK | event name: "sylius.admin.dashboard.header.content", block name: "legacy", template: "@SyliusUi/Block/_legacySonataEvent.html.twig", priority: 0 -->
+
+
+<!-- END BLOCK | event name: "sylius.admin.dashboard.header.content", block name: "legacy" -->
+<!-- END EVENT | event name: "sylius.admin.dashboard.header.content" -->
+    </div>
+    <div class="four wide middle aligned column">
+        <!-- BEGIN EVENT | event name: "sylius.admin.dashboard.channel_switch" -->
+<!-- BEGIN BLOCK | event name: "sylius.admin.dashboard.channel_switch", block name: "content", template: "@SyliusAdmin/Dashboard/_channelSwitchContent.html.twig", priority: 10 -->
+
+<!-- END BLOCK | event name: "sylius.admin.dashboard.channel_switch", block name: "content" -->
+<!-- END EVENT | event name: "sylius.admin.dashboard.channel_switch" -->
+
+    </div>
+</div>
+
+<!-- END BLOCK | event name: "sylius.admin.dashboard.content", block name: "header" -->
+<!-- BEGIN BLOCK | event name: "sylius.admin.dashboard.content", block name: "after_header_legacy", template: "@SyliusUi/Block/_legacySonataEvent.html.twig", priority: 35 -->
+
+
+<!-- END BLOCK | event name: "sylius.admin.dashboard.content", block name: "after_header_legacy" -->
+<!-- BEGIN BLOCK | event name: "sylius.admin.dashboard.content", block name: "statistics", template: "@SyliusAdmin/Dashboard/_statistics.html.twig", priority: 30 -->
+
+
+<div class="ui grid">
+    <div class="column">
+        <div class="stats">
+            <div class="ui top attached action header">
+                Sales summary
+                <div class="ui buttons">
+                    <button
+                        class="ui basic button"
+                        data-stats-button="week"
+                        data-stats-url="http://localhost:8080/admin/statistics?channelCode=FASHION_WEB">
+                        2 Weeks
+                    </button>
+                    <button
+                        class="ui basic button"
+                        data-stats-button="month"
+                        data-stats-url="http://localhost:8080/admin/statistics?channelCode=FASHION_WEB">
+                        Month
+                    </button>
+                    <button
+                        class="ui basic button"
+                        data-stats-button="year"
+                        data-stats-url="http://localhost:8080/admin/statistics?channelCode=FASHION_WEB">
+                        Year
+                    </button>
+                </div>
+            </div>
+            <div class="ui attached segment spaceless">
+                <div class="stats-grid">
+                    <div class="stats-column">
+                        <div class="ui tiny statistic">
+                            <div id="total-sales" data-stats-summary="total_sales" class="value" style="padding-bottom: 10px;">
+                                $0.00
+                            </div>
+                            <div class="label">
+                                Vendas
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stats-column">
+                        <div class="ui tiny statistic">
+                            <div id="new-orders" data-stats-summary="number_of_new_orders" class="value" style="padding-bottom: 10px;">
+                                0
+                            </div>
+                            <div class="label">
+                                Paid orders
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stats-column">
+                        <div class="ui tiny statistic">
+                            <div id="new-customers" data-stats-summary="number_of_new_customers" class="value" style="padding-bottom: 10px;">
+                                21
+                            </div>
+                            <div class="label">
+                                Clientes
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stats-column">
+                        <div class="ui tiny statistic">
+                            <div id="average-order-value" data-stats-summary="average_order_value" class="value" style="padding-bottom: 10px;">
+                                $0.00
+                            </div>
+                            <div class="label">
+                                Valor médio do pedido
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                            <div class="ui bottom attached segment stats-graph">
+                    <button id="navigation-prev"
+                            class="navigation navigation-prev"
+                            interval="year"
+                            data-stats-url="http://localhost:8080/admin/statistics?channelCode=FASHION_WEB">
+                        <i class="angle left icon"></i>
+                    </button>
+                    <canvas
+                        id="stats-graph"
+                        data-labels="[&quot;1.2025&quot;,&quot;2.2025&quot;,&quot;3.2025&quot;,&quot;4.2025&quot;,&quot;5.2025&quot;,&quot;6.2025&quot;,&quot;7.2025&quot;,&quot;8.2025&quot;,&quot;9.2025&quot;,&quot;10.2025&quot;,&quot;11.2025&quot;,&quot;12.2025&quot;]"
+                        data-values="[&quot;0.00&quot;,&quot;0.00&quot;,&quot;0.00&quot;,&quot;0.00&quot;,&quot;0.00&quot;,&quot;0.00&quot;,&quot;0.00&quot;,&quot;0.00&quot;,&quot;0.00&quot;,&quot;0.00&quot;,&quot;0.00&quot;,&quot;0.00&quot;]"
+                        data-currency="US$">
+                    </canvas>
+                    <button id="navigation-next"
+                            class="navigation navigation-next"
+                            interval="year"
+                            data-stats-url="http://localhost:8080/admin/statistics?channelCode=FASHION_WEB">
+                        <i class="angle right icon"></i>
+                    </button>
+                </div>
+                        <div class="ui inverted dimmer stats-loader">
+                <div class="ui loader"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- END BLOCK | event name: "sylius.admin.dashboard.content", block name: "statistics" -->
+<!-- BEGIN BLOCK | event name: "sylius.admin.dashboard.content", block name: "after_statistics_legacy", template: "@SyliusUi/Block/_legacySonataEvent.html.twig", priority: 25 -->
+
+
+<!-- END BLOCK | event name: "sylius.admin.dashboard.content", block name: "after_statistics_legacy" -->
+<!-- BEGIN BLOCK | event name: "sylius.admin.dashboard.content", block name: "menu", template: "@SyliusAdmin/Dashboard/_menu.html.twig", priority: 20 -->
+<div class="ui grid">
+    <div class="center aligned doubling four column row">
+        <div class="column">
+            <a href="/admin/products/" class="ui basic big fluid button">
+                <i class="cubes icon"></i>
+                Produtos
+            </a>
+        </div>
+        <div class="column">
+            <a href="/admin/orders/" class="ui basic big fluid button">
+                <i class="shop icon"></i>
+                Pedidos
+            </a>
+        </div>
+        <div class="column">
+            <a href="/admin/customers/" class="ui basic big fluid button">
+                <i class="users icon"></i>
+                Clientes
+            </a>
+        </div>
+        <div class="column">
+            <a href="/admin/promotions/" class="ui basic big fluid button">
+                <i class="ticket icon"></i>
+                Cart promotions
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- END BLOCK | event name: "sylius.admin.dashboard.content", block name: "menu" -->
+<!-- BEGIN BLOCK | event name: "sylius.admin.dashboard.content", block name: "after_menu_legacy", template: "@SyliusUi/Block/_legacySonataEvent.html.twig", priority: 15 -->
+
+
+<!-- END BLOCK | event name: "sylius.admin.dashboard.content", block name: "after_menu_legacy" -->
+<!-- BEGIN BLOCK | event name: "sylius.admin.dashboard.content", block name: "latest", template: "@SyliusAdmin/Dashboard/_latest.html.twig", priority: 10 -->
+<div class="ui two column stackable grid">
+    <div class="column">
+        
+<h3 class="ui top attached header">Novos clientes</h3>
+<div class="ui attached segment">
+            <table class="ui stackable very basic table" id="customers">
+            <thead>
+                <th style="color: #ababab;">Nome</th>
+                <th></th>
+                <th></th>
+            </thead>
+            <tbody>
+                            <tr>
+                    <td>
+                        <strong>Makayla Hilpert</strong><br>
+                        <div style="color: #ababab;">marguerite.bartell@volkman.com</div>
+                    </td>
+                    <td>
+                                            </td>
+                    <td>
+                        <div class="ui right floated buttons">
+                                
+                
+        <a class="ui labeled icon button "  href="/admin/customers/626" data-test-button="sylius.ui.show">
+                    <i class="icon search"></i>
+                            Mostrar
+            </a>
+
+
+                        </div>
+                    </td>
+                </tr>
+                            <tr>
+                    <td>
+                        <strong>Donny Abernathy</strong><br>
+                        <div style="color: #ababab;">marcelo16@hotmail.com</div>
+                    </td>
+                    <td>
+                                            </td>
+                    <td>
+                        <div class="ui right floated buttons">
+                                
+                
+        <a class="ui labeled icon button "  href="/admin/customers/627" data-test-button="sylius.ui.show">
+                    <i class="icon search"></i>
+                            Mostrar
+            </a>
+
+
+                        </div>
+                    </td>
+                </tr>
+                            <tr>
+                    <td>
+                        <strong>Rudy Wisozk</strong><br>
+                        <div style="color: #ababab;">christy64@yahoo.com</div>
+                    </td>
+                    <td>
+                                            </td>
+                    <td>
+                        <div class="ui right floated buttons">
+                                
+                
+        <a class="ui labeled icon button "  href="/admin/customers/628" data-test-button="sylius.ui.show">
+                    <i class="icon search"></i>
+                            Mostrar
+            </a>
+
+
+                        </div>
+                    </td>
+                </tr>
+                            <tr>
+                    <td>
+                        <strong>Luz Funk</strong><br>
+                        <div style="color: #ababab;">parker.melyssa@smith.com</div>
+                    </td>
+                    <td>
+                                            </td>
+                    <td>
+                        <div class="ui right floated buttons">
+                                
+                
+        <a class="ui labeled icon button "  href="/admin/customers/629" data-test-button="sylius.ui.show">
+                    <i class="icon search"></i>
+                            Mostrar
+            </a>
+
+
+                        </div>
+                    </td>
+                </tr>
+                            <tr>
+                    <td>
+                        <strong>Neal Wunsch</strong><br>
+                        <div style="color: #ababab;">barton.mcdermott@gmail.com</div>
+                    </td>
+                    <td>
+                                            </td>
+                    <td>
+                        <div class="ui right floated buttons">
+                                
+                
+        <a class="ui labeled icon button "  href="/admin/customers/630" data-test-button="sylius.ui.show">
+                    <i class="icon search"></i>
+                            Mostrar
+            </a>
+
+
+                        </div>
+                    </td>
+                </tr>
+                        </tbody>
+        </table>
+    </div>
+
+    </div>
+    <div class="column">
+        
+<h3 class="ui top attached header">Novos pedidos</h3>
+<div class="ui attached segment">
+            <table class="ui stackable very basic table" id="orders">
+            <thead>
+                <th style="color: #ababab;">Pedido</th>
+                <th style="color: #ababab;">Produtos</th>
+                <th style="color: #ababab;">Total</th>
+                <th></th>
+            </thead>
+            <tbody>
+                            <tr>
+                    <td>
+                        <strong>John Doe</strong><br>
+                        <div style="color: #ababab;">shop@example.com</div>
+                    </td>
+                    <td>
+                        13
+                    </td>
+                    <td>
+                        US$ 797,10
+                    </td>
+                    <td>
+                        <div class="ui right floated buttons">
+                                
+                
+        <a class="ui labeled icon button "  href="/admin/orders/392" data-test-button="sylius.ui.show">
+                    <i class="icon search"></i>
+                            Mostrar
+            </a>
+
+
+                        </div>
+                    </td>
+                </tr>
+                            <tr>
+                    <td>
+                        <strong>Nannie Bednar</strong><br>
+                        <div style="color: #ababab;">maye.wiza@gmail.com</div>
+                    </td>
+                    <td>
+                        3
+                    </td>
+                    <td>
+                        US$ 93,82
+                    </td>
+                    <td>
+                        <div class="ui right floated buttons">
+                                
+                
+        <a class="ui labeled icon button "  href="/admin/orders/391" data-test-button="sylius.ui.show">
+                    <i class="icon search"></i>
+                            Mostrar
+            </a>
+
+
+                        </div>
+                    </td>
+                </tr>
+                            <tr>
+                    <td>
+                        <strong>Chelsea Will</strong><br>
+                        <div style="color: #ababab;">efriesen@weimann.com</div>
+                    </td>
+                    <td>
+                        4
+                    </td>
+                    <td>
+                        US$ 226,26
+                    </td>
+                    <td>
+                        <div class="ui right floated buttons">
+                                
+                
+        <a class="ui labeled icon button "  href="/admin/orders/390" data-test-button="sylius.ui.show">
+                    <i class="icon search"></i>
+                            Mostrar
+            </a>
+
+
+                        </div>
+                    </td>
+                </tr>
+                            <tr>
+                    <td>
+                        <strong>Donny Abernathy</strong><br>
+                        <div style="color: #ababab;">marcelo16@hotmail.com</div>
+                    </td>
+                    <td>
+                        12
+                    </td>
+                    <td>
+                        US$ 839,64
+                    </td>
+                    <td>
+                        <div class="ui right floated buttons">
+                                
+                
+        <a class="ui labeled icon button "  href="/admin/orders/389" data-test-button="sylius.ui.show">
+                    <i class="icon search"></i>
+                            Mostrar
+            </a>
+
+
+                        </div>
+                    </td>
+                </tr>
+                            <tr>
+                    <td>
+                        <strong>Penelope Herman</strong><br>
+                        <div style="color: #ababab;">pbins@kunde.com</div>
+                    </td>
+                    <td>
+                        10
+                    </td>
+                    <td>
+                        US$ 496,06
+                    </td>
+                    <td>
+                        <div class="ui right floated buttons">
+                                
+                
+        <a class="ui labeled icon button "  href="/admin/orders/388" data-test-button="sylius.ui.show">
+                    <i class="icon search"></i>
+                            Mostrar
+            </a>
+
+
+                        </div>
+                    </td>
+                </tr>
+                        </tbody>
+        </table>
+    </div>
+
+    </div>
+</div>
+
+<!-- END BLOCK | event name: "sylius.admin.dashboard.content", block name: "latest" -->
+<!-- BEGIN BLOCK | event name: "sylius.admin.dashboard.content", block name: "after_content_legacy", template: "@SyliusUi/Block/_legacySonataEvent.html.twig", priority: 5 -->
+
+
+<!-- END BLOCK | event name: "sylius.admin.dashboard.content", block name: "after_content_legacy" -->
+<!-- END EVENT | event name: "sylius.admin.dashboard.content" -->
+
+                                            </div>
+
+            <div class="admin-layout__footer">
+                Desenvolvido por <a href="https://sylius.com" target="_blank">Sylius v1.13.10</a>. See an issue? <a href="https://github.com/Sylius/Sylius/issues" target="_blank">Report it!</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const layoutToggleButton = document.querySelectorAll('[data-layout-toggle]');
+
+        layoutToggleButton.forEach((button) => {
+            button.addEventListener('click', () => {
+                layoutState = !layoutState;
+                setLayoutState();
+            });
+        });
+    </script>
+
+    <div class="ui small basic modal" id="confirmation-modal">
+    <div class="ui icon header">
+        <i class="warning sign icon"></i>
+        Confirme sua ação
+    </div>
+    <div class="content">
+        <p>Tem certeza de que deseja executar esta ação?</p>
+    </div>
+    <div class="actions">
+        <div class="ui red basic cancel inverted button">
+            <i class="remove icon"></i>
+            Não
+        </div>
+        <div class="ui green ok inverted button" id="confirmation-button">
+            <i class="checkmark icon"></i>
+            Sim
+        </div>
+    </div>
+</div>
+
+        <!-- BEGIN EVENT | event name: "sylius.admin.layout.javascripts" -->
+<!-- BEGIN BLOCK | event name: "sylius.admin.layout.javascripts", block name: "scripts", template: "@SyliusAdmin/_scripts.html.twig", priority: 10 -->
+<script src="/build/admin/admin-entry.js"></script>
+<script src="/build/app/admin/app-admin-entry.js"></script>
+
+<!-- END BLOCK | event name: "sylius.admin.layout.javascripts", block name: "scripts" -->
+<!-- BEGIN BLOCK | event name: "sylius.admin.layout.javascripts", block name: "legacy", template: "@SyliusUi/Block/_legacySonataEvent.html.twig", priority: 0 -->
+
+
+<!-- END BLOCK | event name: "sylius.admin.layout.javascripts", block name: "legacy" -->
+<!-- END EVENT | event name: "sylius.admin.layout.javascripts" -->
+</body>
+</html>

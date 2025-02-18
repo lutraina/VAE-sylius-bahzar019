@@ -3,3 +3,12 @@ imports:
 
 sylius_api:
     enabled: true
+
+services:
+    sylius.behat.shared_storage:
+        class: Sylius\Behat\Service\SharedStorage
+        public: true
+
+    _defaults:
+        autowire: true
+        autoconfigure: true
