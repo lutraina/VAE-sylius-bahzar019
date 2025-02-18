@@ -6,7 +6,7 @@ return array (
   'APP_ENV' => 'int',
   'APP_DEBUG' => '1',
   'APP_SECRET' => 'EDITME',
-  'DATABASE_URL' => 'mysql://sylius_dev:sylius_dev@db/sylius_dev?serverVersion=8&charset=utf8mb4',
+  'DATABASE_URL' => 'mysql://sylius_int:sylius_int@db/sylius_int?serverVersion=8&charset=utf8mb4',
   'MESSENGER_TRANSPORT_DSN' => 'doctrine://default',
   'SYLIUS_MESSENGER_TRANSPORT_MAIN_DSN' => 'doctrine://default',
   'SYLIUS_MESSENGER_TRANSPORT_MAIN_FAILED_DSN' => 'doctrine://default?queue_name=main_failed',
