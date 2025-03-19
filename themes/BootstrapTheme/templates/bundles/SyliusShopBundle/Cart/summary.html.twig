@@ -12,6 +12,11 @@
     {% if not cart.empty %}
         {% include '@SyliusShop/Cart/Summary/_header.html.twig' %}
 
+        {# Bouton pour payer avec Stripe #}
+        <a href="{{ path('stripe_checkout') }}" class="ui primary button">
+            Payer avec Stripe
+        </a>
+        
         <div class="grid gap-lg-5 mb-5">
             <div class="g-col-12 g-col-lg-8">
                 {{ sylius_template_event('sylius.shop.cart.items', {cart, form}) }}
