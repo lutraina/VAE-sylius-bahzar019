@@ -1,5 +1,13 @@
 {
   "entrypoints": {
+    "app": {
+      "css": [
+        "/build/shop/app.css"
+      ],
+      "js": [
+        "/build/shop/app.js"
+      ]
+    },
     "shop-entry": {
       "css": [
         "/build/shop/shop-entry.css"
