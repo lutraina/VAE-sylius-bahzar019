@@ -4,7 +4,7 @@ sylius_ui:
             blocks:
                 banner:
                     template: "@SyliusShop/Homepage/_banner.html.twig"
-                    priority: 
+                    priority: 60
                 mandalas:
                     template: "@SyliusShop/Homepage/_mandalas.html.twig"
                     priority: 55
