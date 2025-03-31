@@ -1,13 +1,24 @@
 {
   "license": "MIT",
   "scripts": {
-    "build": "encore dev",
-    "build:prod": "encore production",
+    "dev": "encore dev",
+    "build": "encore production",
     "postinstall": "semantic-ui-css-patch",
     "lint": "yarn lint:js",
     "watch": "encore dev --watch"
   },
   "devDependencies": {
-    "@sylius-ui/frontend": "^1.0"
+    "@sylius-ui/frontend": "^1.0",
+    "@symfony/webpack-encore": "^1.0.0",
+    "file-loader": "^6.2.0",
+    "sass-loader": "^12.0.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.2",
+    "@popperjs/core": "^2.11",
+    "axios": "^1.8.3",
+    "bootstrap": "^5.3.3",
+    "glightbox": "^3.3.1",
+    "lightbox": "^0.5.0"
   }
 }

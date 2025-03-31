@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="{{ app.request.locale|slice(0, 2) }}">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>{% block title %}{{ sylius.channel.name }}{% endblock %}</title>
+
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-P8Z6N66L');</script>
+	<!-- End Google Tag Manager -->
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0255628389241038"
+            crossorigin="anonymous"></script>
+    
+
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    {% block metatags '' %}
+
+    {% block stylesheets %}
+        {{ sylius_template_event('sylius.shop.layout.stylesheets') }}
+    {% endblock %}
+
+    {{ sylius_template_event('sylius.shop.layout.head') }}
+</head>
+
+<body class="d-flex flex-column min-vh-100 border-top border-5 border-primary">
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P8Z6N66L"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+{{ sylius_template_event('sylius.shop.layout.before_body') }}
+
+{% block top %}
+    <nav class="navbar navbar-expand-lg border-bottom border-gray-200">
+        <div class="container">
+            {{ sylius_template_event('sylius.shop.layout.topbar') }}
+        </div>
+    </nav>
+{% endblock %}
+
+{% block header %}
+
+    {{ sylius_template_event('sylius.shop.layout.header') }}
+    {{ sylius_template_event('sylius.shop.layout.after_header') }}
+    <div class="mb-4"></div>
+{% endblock %}
+
+<div class="main-content container" style="min-height: 50vh">
+    {% include '@SyliusShop/_flashes.html.twig' %}
+
+    {{ sylius_template_event('sylius.shop.layout.before_content') }}
+
+    {% block content %}
+    {% endblock %}
+
+    {{ sylius_template_event('sylius.shop.layout.after_content') }}
+</div>
+
+
+
+{% block footer %}
+    {% include '@SyliusShop/_footer.html.twig' %}
+{% endblock %}
+
+{% block javascripts %}
+    {{ sylius_template_event('sylius.shop.layout.javascripts') }}
+{% endblock %}
+
+{{ sylius_template_event('sylius.shop.layout.after_body') }}
+
+<div class="loading-overlay" data-js-loading-overlay>
+    <div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+</div>
+
+</body>
+</html>

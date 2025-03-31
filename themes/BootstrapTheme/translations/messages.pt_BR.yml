@@ -1,0 +1,44 @@
+# This file is part of the Sylius package.
+# (c) Sylius Sp. z o.o.
+
+sylius:
+    email:
+        order_confirmation:
+            subject: 'Confirmação do pedido'
+            view_order_or_change_payment_method: 'Ver pedido ou trocar método de pagamento'
+        password_reset:
+            hello: 'Olá'
+            subject: 'Redefinir a senha'
+        verification_token:
+            hello: 'Olá'
+            subject: 'Verificação de endereço de e-mail'
+    lightbox:
+        image_album_label: 'Imagem %1 de %2'
+    menu:
+        shop:
+            account:
+                address_book: 'Catálogo de endereços'
+                change_password: 'Alterar senha'
+                dashboard: 'Painel'
+                header: 'Sua conta'
+                order_history: 'Histórico de pedidos'
+                personal_information: 'Informação pessoal'
+    footer:
+        banner:
+            free_shipping_title: 'Taxa de envio calculada '
+            free_shipping_content: 'pelos correios'
+            guarantee_title: 'Garantia de compra' 
+            guarantee_content: 'Satisfeito ou reembolsado'
+            multiple_payments_title: 'Dois tipos de pagamento'
+            multiple_payments_content: 'Page online ou por pix'
+    homepage:
+        about_us: 'Sobre a gente'
+        about_us_content: 'Somos um brecho altenativo com venda online ou por pix (<i> "sylius.homepage.about_us_content"</i>)'
+        banner_content: 'Bahzar019 Encontre o look perfeito para cada momento especial.'
+        banner_content2: 'Brechó Virtual.'
+        newsletter: 'Newsletter'
+        newsletter_description: 'Inscrevas-se para receber nossa newsletter ! (<i>blabla "sylius. homepage.newsletter_description" blabla</i>)'
+        subscribe: 'Enviar'
+        banner_button: 'Veja os ultimos produtos'
+    ui:
+        use_the_contact_form_below_to_send_us_a_message: 'Use o formulário de contato abaixo para nos enviar uma mensagem***********************.'
