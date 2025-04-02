@@ -12,30 +12,27 @@
     <!-- Open Graph Tags -->
     <meta property="og:title" content="{% block title %}{{ sylius.channel.name }} | Brechó Campineiro{% endblock %}" />
     <meta property="og:description" content="Découvrez notre sélection de produits de qualité sur {{ sylius.channel.name }}. Achetez en ligne et profitez de nos offres exclusives." />
-    <meta property="og:image" content="URL de l'image pour l'aperçu" />
-    <meta property="og:type" content="website" />
 
-     <meta property="og:description" content="Découvrez des vêtements, sacs et accessoires d’occasion pour hommes et femmes à prix réduits. Achetez de manière éthique et économique sur {{ sylius.channel.name }}." />
-    <meta property="og:image" content="{{ product_image_url }}" />
-    <meta property="og:url" content="{{ app.request.uri }}" />
+    <!-- Récupérer l'URL de l'image du produit -->
+    <meta property="og:image" content="{{ asset(product.image.path) }}" />
     <meta property="og:type" content="product" />
+    <meta property="og:url" content="{{ app.request.uri }}" />
     <meta property="og:price:amount" content="{{ product.price }}" />
     <meta property="og:price:currency" content="EUR" />
     <meta property="og:availability" content="in_stock" />
     <meta property="og:condition" content="used" />
     <meta property="og:site_name" content="{{ sylius.channel.name }}" />
 
-
     <!-- Optionnel : Ajouter une catégorie populaire pour les produits -->
     <meta property="og:categoria" content="Venda de ocasião : roupas femininas, roupas masculinas, calçados, chapéus, acessórios e bolsas." />
 
     <!-- Optionnel : Mentionner les avantages de l'achat d'occasion -->
-    <meta property="og:description" content="Réduisez votre empreinte écologique et économisez avec nos produits d
+    <meta property="og:description" content="Réduisez votre empreinte écologique et économisez avec nos produits d'occasion." />
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:description" content="Découvrez notre sélection de produits de qualité sur {{ sylius.channel.name }}. Achetez en ligne et profitez de nos offres exclusives." />
-    <meta name="twitter:image" content="URL de l'image pour l'aperçu" />
+    <meta name="twitter:image" content="{{ asset(product.image.path) }}" />
 
     {% block metatags '' %}
 
