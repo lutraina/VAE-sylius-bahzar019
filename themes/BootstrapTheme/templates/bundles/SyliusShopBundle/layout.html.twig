@@ -14,10 +14,10 @@
     <meta property="og:description" content="Découvrez notre sélection de produits de qualité sur {{ sylius.channel.name }}. Achetez en ligne et profitez de nos offres exclusives." />
 
     <!-- Récupérer l'URL de l'image du produit -->
-    <meta property="og:image" content="{{ asset(product.image.path) }}" />
-    <meta property="og:type" content="product" />
+
+
     <meta property="og:url" content="{{ app.request.uri }}" />
-    <meta property="og:price:amount" content="{{ product.price }}" />
+
     <meta property="og:price:currency" content="EUR" />
     <meta property="og:availability" content="in_stock" />
     <meta property="og:condition" content="used" />
@@ -32,7 +32,7 @@
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:description" content="Découvrez notre sélection de produits de qualité sur {{ sylius.channel.name }}. Achetez en ligne et profitez de nos offres exclusives." />
-    <meta name="twitter:image" content="{{ asset(product.image.path) }}" />
+
 
     {% block metatags '' %}
 
