@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-
     <meta name="description" content="Découvrez notre sélection de produits de qualité sur {{ sylius.channel.name }}. Achetez en ligne et profitez de nos offres exclusives.">
     <meta name="keywords" content="produits, boutique en ligne, {{ sylius.channel.name }}">
 
@@ -53,6 +52,9 @@
 {% endblock %}
 
 <div class="main-content container" style="min-height: 50vh">
+    <!-- Ajout de la balise <h1> pour le sujet principal de la page -->
+    <h1 class="page-title">{{ sylius.channel.name }} - Découvrez nos produits</h1>
+
     {% include '@SyliusShop/_flashes.html.twig' %}
     {{ sylius_template_event('sylius.shop.layout.before_content') }}
     {% block content %}
