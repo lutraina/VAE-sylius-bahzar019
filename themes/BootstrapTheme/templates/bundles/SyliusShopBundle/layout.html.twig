@@ -1,25 +1,27 @@
 <!DOCTYPE html>
-
 <html lang="{{ app.request.locale|slice(0, 2) }}">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>{% block title %}{{ sylius.channel.name }}{% endblock %}</title>
+    <title>{% block title %}{{ sylius.channel.name }} | Boutique en ligne{% endblock %}</title>
 
-	<!-- Google Tag Manager -->
-	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-P8Z6N66L');</script>
-	<!-- End Google Tag Manager -->
-
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0255628389241038"
-            crossorigin="anonymous"></script>
-
+    <meta name="description" content="Découvrez notre sélection de produits de qualité sur {{ sylius.channel.name }}. Achetez en ligne et profitez de nos offres exclusives.">
+    <meta name="keywords" content="produits, boutique en ligne, {{ sylius.channel.name }}">
 
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="{% block title %}{{ sylius.channel.name }} | Boutique en ligne{% endblock %}" />
+    <meta property="og:description" content="Découvrez notre sélection de produits de qualité sur {{ sylius.channel.name }}. Achetez en ligne et profitez de nos offres exclusives." />
+    <meta property="og:image" content="URL de l'image pour l'aperçu" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{% block title %}{{ sylius.channel.name }} | Boutique en ligne{% endblock %}" />
+    <meta name="twitter:description" content="Découvrez notre sélection de produits de qualité sur {{ sylius.channel.name }}. Achetez en ligne et profitez de nos offres exclusives." />
+    <meta name="twitter:image" content="URL de l'image pour l'aperçu" />
 
     {% block metatags '' %}
 
@@ -31,10 +33,10 @@
 </head>
 
 <body class="d-flex flex-column min-vh-100 border-top border-5 border-primary">
-	<!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P8Z6N66L"
-	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P8Z6N66L"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 {{ sylius_template_event('sylius.shop.layout.before_body') }}
 
@@ -47,7 +49,6 @@
 {% endblock %}
 
 {% block header %}
-
     {{ sylius_template_event('sylius.shop.layout.header') }}
     {{ sylius_template_event('sylius.shop.layout.after_header') }}
     <div class="mb-4"></div>
@@ -55,16 +56,11 @@
 
 <div class="main-content container" style="min-height: 50vh">
     {% include '@SyliusShop/_flashes.html.twig' %}
-
     {{ sylius_template_event('sylius.shop.layout.before_content') }}
-
     {% block content %}
     {% endblock %}
-
     {{ sylius_template_event('sylius.shop.layout.after_content') }}
 </div>
-
-
 
 {% block footer %}
     {% include '@SyliusShop/_footer.html.twig' %}
