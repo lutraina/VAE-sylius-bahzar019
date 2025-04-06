@@ -27,6 +27,7 @@
 .env.int
 .env.prod
 .gitlab-ci.yml
+.idea/*
 #/.env.local.php
 #/public/bundles
 /var/
