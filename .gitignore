@@ -20,12 +20,13 @@
 #/docker/mysql/data/
 
 ###> symfony/framework-bundle ###
-/.env.*
-/.env.*.local
-/.env.local
-/.env.dev
-/.env.int
-/.env.prod
+.env.*
+.env.*.local
+.env.local
+.env.dev
+.env.int
+.env.prod
+.gitlab-ci.yml
 #/.env.local.php
 #/public/bundles
 /var/
