@@ -23,6 +23,7 @@
     ],
     "require": {
         "php": "^8.1",
+        "sentry/sentry-symfony": "*",
         "stripe/stripe-php": "^16.5",
         "sylius/bootstrap-theme": "^1.2",
         "sylius/paypal-plugin": "^1.6",

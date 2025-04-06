@@ -5,89 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6781c35-3148-4c1d-b444-7d0da463c55e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/config/packages/_sylius_shop.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/themes/BootstrapTheme/templates/bundles/SyliusShopBundle/Homepage/_mandalas.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/SentryTestController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.int" beforeDir="false" afterPath="$PROJECT_DIR$/.env.int" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env.local.php" beforeDir="false" afterPath="$PROJECT_DIR$/.env.local.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.prod" beforeDir="false" afterPath="$PROJECT_DIR$/.env.prod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sylius-bahzar.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sylius-bahzar.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/admin/admin-entry.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/admin/admin-entry.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/shop/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/shop/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/shop/shop-entry.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/shop/shop-entry.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/apiplatform/es6-promise/es6-promise.auto.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/apiplatform/es6-promise/es6-promise.auto.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/apiplatform/fetch/fetch.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/apiplatform/fetch/fetch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/apiplatform/fonts/open-sans/400.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/apiplatform/fonts/open-sans/400.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/apiplatform/fonts/open-sans/700.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/apiplatform/fonts/open-sans/700.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/apiplatform/fonts/open-sans/files/open-sans-cyrillic-400-normal.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/apiplatform/fonts/open-sans/files/open-sans-cyrillic-400-normal.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/apiplatform/fonts/open-sans/files/open-sans-cyrillic-700-normal.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/apiplatform/fonts/open-sans/files/open-sans-cyrillic-700-normal.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/apiplatform/fonts/open-sans/files/open-sans-cyrillic-ext-400-normal.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/apiplatform/fonts/open-sans/files/open-sans-cyrillic-ext-400-normal.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/apiplatform/fonts/open-sans/files/open-sans-cyrillic-ext-700-normal.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/apiplatform/fonts/open-sans/files/open-sans-cyrillic-ext-700-normal.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/apiplatform/fonts/open-sans/files/open-sans-greek-400-normal.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/apiplatform/fonts/open-sans/files/open-sans-greek-400-normal.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/apiplatform/fonts/open-sans/files/open-sans-greek-700-normal.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/apiplatform/fonts/open-sans/files/open-sans-greek-700-normal.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/apiplatform/fonts/open-sans/files/open-sans-greek-ext-400-normal.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/apiplatform/fonts/open-sans/files/open-sans-greek-ext-400-normal.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/apiplatform/fonts/open-sans/files/open-sans-greek-ext-700-normal.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/apiplatform/fonts/open-sans/files/open-sans-greek-ext-700-normal.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/apiplatform/fonts/open-sans/files/open-sans-latin-400-normal.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/apiplatform/fonts/open-sans/files/open-sans-latin-400-normal.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/apiplatform/fonts/open-sans/files/open-sans-latin-700-normal.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/apiplatform/fonts/open-sans/files/open-sans-latin-700-normal.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/apiplatform/fonts/open-sans/files/open-sans-latin-ext-400-normal.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/apiplatform/fonts/open-sans/files/open-sans-latin-ext-400-normal.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/apiplatform/fonts/open-sans/files/open-sans-latin-ext-700-normal.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/apiplatform/fonts/open-sans/files/open-sans-latin-ext-700-normal.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/apiplatform/fonts/open-sans/files/open-sans-vietnamese-400-normal.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/apiplatform/fonts/open-sans/files/open-sans-vietnamese-400-normal.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/apiplatform/fonts/open-sans/files/open-sans-vietnamese-700-normal.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/apiplatform/fonts/open-sans/files/open-sans-vietnamese-700-normal.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/apiplatform/graphiql-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/apiplatform/graphiql-style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/apiplatform/graphiql/graphiql.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/apiplatform/graphiql/graphiql.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/apiplatform/graphiql/graphiql.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/apiplatform/graphiql/graphiql.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/apiplatform/graphql-playground/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/apiplatform/graphql-playground/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/apiplatform/graphql-playground/middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/apiplatform/graphql-playground/middleware.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/apiplatform/init-graphiql.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/apiplatform/init-graphiql.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/apiplatform/init-graphql-playground.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/apiplatform/init-graphql-playground.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/apiplatform/init-redoc-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/apiplatform/init-redoc-ui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/apiplatform/init-swagger-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/apiplatform/init-swagger-ui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/apiplatform/logo-header.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/apiplatform/logo-header.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/apiplatform/react/react-dom.production.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/apiplatform/react/react-dom.production.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/apiplatform/react/react.production.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/apiplatform/react/react.production.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/apiplatform/redoc/redoc.standalone.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/apiplatform/redoc/redoc.standalone.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/apiplatform/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/apiplatform/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/apiplatform/swagger-ui/oauth2-redirect.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/apiplatform/swagger-ui/oauth2-redirect.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/apiplatform/swagger-ui/swagger-ui-bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/apiplatform/swagger-ui/swagger-ui-bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/apiplatform/swagger-ui/swagger-ui-bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/apiplatform/swagger-ui/swagger-ui-bundle.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/apiplatform/swagger-ui/swagger-ui-standalone-preset.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/apiplatform/swagger-ui/swagger-ui-standalone-preset.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/apiplatform/swagger-ui/swagger-ui-standalone-preset.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/apiplatform/swagger-ui/swagger-ui-standalone-preset.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/apiplatform/swagger-ui/swagger-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/apiplatform/swagger-ui/swagger-ui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/apiplatform/swagger-ui/swagger-ui.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/apiplatform/swagger-ui/swagger-ui.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/apiplatform/web.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/apiplatform/web.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/apiplatform/webby.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/apiplatform/webby.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/babdevpagerfanta/css/pagerfanta.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/babdevpagerfanta/css/pagerfanta.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/syliuscore/images/sylius-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/syliuscore/images/sylius-logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/media/image/07/5f/103d212ec3531e9543204d43b9d9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/media/image/19/ed/e0fa475b0ce2b17ff7a1206fafe5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/media/image/1f/ed/a4c51cf5d6acbb2b4d96a96f6d5b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/media/image/24/af/0519611af35903f9a9756db7fe64.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/media/image/27/cf/d089299a163bc4a3a1e9887ddd5d.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/media/image/32/40/2fe776a1d25aa9e439d051c48f11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/media/image/48/30/7fa4993c9ea4e4923699541dd0f6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/media/image/4a/9f/a173ec7c4bbc7ccf912894af7a9b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/media/image/4a/9f/e19bc7d11a0abd4feb80780b7ee5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/media/image/54/69/d16a2ece73e06a506a5b1459ba59.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/media/image/58/ff/5b6b5ca5d96b09101664262192e8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/media/image/5e/9f/f2498e00686f2ac7760405f5db18.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/media/image/6c/62/3f7d29ed32cf697901d34708220d.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/media/image/75/59/1d62b46d91903991f327ee2869ec.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/media/image/84/3f/75699f3408abb8e2c90304ca2e30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/media/image/88/ed/8c3bbcde9958f3cf343ae08dcd28.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/media/image/9b/52/b5212026e0ddc54301f595456d91.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/media/image/9f/c1/ec26ee1df00832c096cd47e73de9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/media/image/aa/e2/b1da94e1b9c5983a9da9a72088d8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/media/image/b7/e0/fa5839c683d75f1ec00b2ed9b3d6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/media/image/c5/89/d4748018fb24c4afe5d70b67e730.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/media/image/d0/1e/7b2448f6e7b36b108ec2062367f9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/media/image/dd/cd/b4090d7c67a8faa2c87d5d2b4669.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/media/image/f2/7a/32d454d8fe365767c83ec1a1647f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/themes/bootstrap-theme/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/themes/bootstrap-theme/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/BootstrapTheme/templates/bundles/SyliusShopBundle/Homepage/_banner.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/themes/BootstrapTheme/templates/bundles/SyliusShopBundle/Homepage/_banner.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/BootstrapTheme/templates/bundles/SyliusShopBundle/Layout/Header/_menu.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/themes/BootstrapTheme/templates/bundles/SyliusShopBundle/Layout/Header/_menu.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/BootstrapTheme/templates/bundles/SyliusShopBundle/layout.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/themes/BootstrapTheme/templates/bundles/SyliusShopBundle/layout.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -107,22 +38,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitLabMergeRequestFiltersHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPENED",
-    "assignee": {
-      "type": "org.jetbrains.plugins.gitlab.mergerequest.ui.filters.GitLabMergeRequestsFiltersValue.MergeRequestsMemberFilterValue.MergeRequestsAssigneeFilterValue",
-      "username": "lutraina",
-      "fullname": "Luciana Hembert"
+  <component name="GitLabMergeRequestFiltersHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPENED&quot;,
+    &quot;assignee&quot;: {
+      &quot;type&quot;: &quot;org.jetbrains.plugins.gitlab.mergerequest.ui.filters.GitLabMergeRequestsFiltersValue.MergeRequestsMemberFilterValue.MergeRequestsAssigneeFilterValue&quot;,
+      &quot;username&quot;: &quot;lutraina&quot;,
+      &quot;fullname&quot;: &quot;Luciana Hembert&quot;
     }
   }
-}]]></component>
-  <component name="GitLabMergeRequestsSettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "first": "https://gitlab.com/lutraina1/sylius-bahzar.git",
-    "second": "9ff2c261-6cd4-4eb9-845c-9b79af8a9bec"
+}</component>
+  <component name="GitLabMergeRequestsSettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;first&quot;: &quot;https://gitlab.com/lutraina1/sylius-bahzar.git&quot;,
+    &quot;second&quot;: &quot;9ff2c261-6cd4-4eb9-845c-9b79af8a9bec&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/.env" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/.env.int" root0="FORCE_HIGHLIGHTING" />
@@ -389,6 +320,10 @@
       <path value="$PROJECT_DIR$/vendor/sonata-project/block-bundle" />
       <path value="$PROJECT_DIR$/vendor/setono/sylius-behat-pack" />
       <path value="$PROJECT_DIR$/vendor/sylius/bootstrap-theme" />
+      <path value="$PROJECT_DIR$/vendor/jean85/pretty-package-versions" />
+      <path value="$PROJECT_DIR$/vendor/sentry/sentry-symfony" />
+      <path value="$PROJECT_DIR$/vendor/sentry/sentry" />
+      <path value="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
@@ -468,6 +403,7 @@
       <workItem from="1739820586824" duration="335000" />
       <workItem from="1742352686500" duration="14985000" />
       <workItem from="1743283760713" duration="13277000" />
+      <workItem from="1743921821429" duration="2534000" />
     </task>
     <servers />
   </component>
