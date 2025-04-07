@@ -2,7 +2,7 @@
   "entrypoints": {
     "app-shop-entry": {
       "js": [
-        "/build/app/shop/app-shop-entry.31d6cfe0.js"
+        "/build/app/shop/app-shop-entry.js"
       ]
     }
   }

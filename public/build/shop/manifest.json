@@ -1,8 +1,8 @@
 {
-  "build/shop/app.css": "/build/shop/app.fdb206ac.css",
-  "build/shop/app.js": "/build/shop/app.63881438.js",
-  "build/shop/shop-entry.css": "/build/shop/shop-entry.d7c60822.css",
-  "build/shop/shop-entry.js": "/build/shop/shop-entry.35a00652.js",
+  "build/shop/app.css": "/build/shop/app.css",
+  "build/shop/app.js": "/build/shop/app.js",
+  "build/shop/shop-entry.css": "/build/shop/shop-entry.css",
+  "build/shop/shop-entry.js": "/build/shop/shop-entry.js",
   "build/shop/images/brand-icons.svg": "/build/shop/images/brand-icons.548d2b15.svg",
   "build/shop/fonts/fa-solid-900.ttf": "/build/shop/fonts/fa-solid-900.2582b0e4.ttf",
   "build/shop/images/icons.svg": "/build/shop/images/icons.62c9e5f8.svg",
