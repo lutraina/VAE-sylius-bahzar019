@@ -33,9 +33,3 @@ services:
     App\Service\MelhorEnvioApiService:
         arguments:
             $accessToken: '%env(MELHORENVIO_API_TOKEN)%'
-
-
-    app.listener.admin.menu_builder:
-        class: App\Menu\AdminMenuListener
-        tags:
-            - { name: kernel.event_listener, event: sylius.menu.admin.main, method: addAdminMenuItems }

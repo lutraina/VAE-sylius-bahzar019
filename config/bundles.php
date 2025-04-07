@@ -62,5 +62,4 @@ return [
     Symfony\WebpackEncoreBundle\WebpackEncoreBundle::class => ['all' => true],
     Sylius\PayPalPlugin\SyliusPayPalPlugin::class => ['all' => true],
     Sentry\SentryBundle\SentryBundle::class => ['prod' => true],
-    Symfony\Bundle\MakerBundle\MakerBundle::class => ['dev' => true],
 ];

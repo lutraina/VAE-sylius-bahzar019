@@ -1,21 +1,2 @@
 sylius_paypal_webhook:
     resource: "@SyliusPayPalPlugin/Resources/config/webhook_routing.yaml"
-
-app_admin_wishlist:
-    resource: |
-        alias: app.wishlist
-        section: admin
-        templates: "@SyliusAdmin\\shared\\crud"
-        redirect: update
-        grid: app_admin_wishlist
-        vars:
-            all:
-                subheader: app.ui.wishlist
-            index:
-                icon: 'file image outline'
-    type: sylius.resource
-    prefix: /admin
-    
-admin_wishlist_show:
-    path: /admin/wishlist
-    controller: App\Controller\Admin\WishlistController::showWishlist

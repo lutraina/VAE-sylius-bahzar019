@@ -2,7 +2,7 @@
   "entrypoints": {
     "app-admin-entry": {
       "js": [
-        "/build/app/admin/app-admin-entry.js"
+        "/build/app/admin/app-admin-entry.31d6cfe0.js"
       ]
     }
   }

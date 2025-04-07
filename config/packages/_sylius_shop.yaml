@@ -23,9 +23,6 @@ sylius_ui:
                 products_grid:
                     template: "@SyliusShop/Homepage/_productsGrid.html.twig"
                     priority: 20
-                promo_banner:
-                    template: "@SyliusShop/Homepage/_promoBanner.html.twig"
-                    priority: 20
                 about_us:
                     template: "@SyliusShop/Homepage/_aboutUs.html.twig"
                     priority: 10
