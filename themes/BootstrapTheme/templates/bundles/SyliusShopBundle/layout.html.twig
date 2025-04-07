@@ -41,6 +41,9 @@
     {% endblock %}
 
     {{ sylius_template_event('sylius.shop.layout.head') }}
+
+    <script src="https://code.iconify.design/2/2.0.0-rc.4/iconify.min.js"></script>
+
 </head>
 
 <body class="d-flex flex-column min-vh-100 border-top border-5 border-primary">
@@ -75,6 +78,12 @@
     {% endblock %}
     {{ sylius_template_event('sylius.shop.layout.after_content') }}
 </div>
+
+
+
+{% block insta %}
+    {% include '@SyliusShop/_instagram.html.twig' %}
+{% endblock %}
 
 {% block footer %}
     {% include '@SyliusShop/_footer.html.twig' %}
